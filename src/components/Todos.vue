@@ -37,9 +37,9 @@ export default {
             this.updateTodo(updTodo);
         }
     },
-
+    // Usa o getter sempre que o array for atualizado
     computed: mapGetters(['allTodos']),
-
+    // Ao criar o componente chama a action fetchTodos para popular o array de objetos "Todos"
     created(){
         this.fetchTodos();
     }

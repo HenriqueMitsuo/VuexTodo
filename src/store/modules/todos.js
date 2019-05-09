@@ -50,11 +50,13 @@ const actions = {
 
 const mutations = {
     setTodos: (state, todos) => (state.todos = todos),
+    // unshift() method adds one or more items or elements to the beginning of the array
     newTodo: (state, todo) => state.todos.unshift(todo),
     removeTodo: (state, id) => state.todos = state.todos.filter(todo => todo.id !== id),
     updateTodo: (state, updTodo) => {
         const index = state.todos.findIndex(todo => todo.id === updTodo.id);
         if(index !== -1){
+            // The splice() method adds/removes items to/from an array, and returns the removed item(s).
             state.todos.splice(index, 1, updTodo);
         }
     }
