@@ -1,0 +1,7 @@
+{
+  "appId": "com.example.vuextodo",
+  "appName": "VuexTodo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist"
+}
